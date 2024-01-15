@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const NewsItem = (props)=>{
   
@@ -14,10 +15,10 @@ const NewsItem = (props)=>{
           <p className="card-text">{description}
             
           </p>
-          <a href={url} target="_blank" className="btn btn-sm btn-dark">
+          <Link to={url} target="_blank" className="btn btn-sm btn-dark">
 
             Read more
-          </a>
+          </Link>
           <p class="card-text"><small class="text-muted">{publish}</small></p>
         </div>
       </div>

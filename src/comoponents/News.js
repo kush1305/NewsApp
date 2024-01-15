@@ -50,7 +50,8 @@ const News = (props)=>{
 
     useEffect(()=>{
         updateNews();
-    },[])
+    },)
+    // eslint-disable-next-line 
 
     
 
